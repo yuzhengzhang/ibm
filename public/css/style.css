@@ -1,0 +1,266 @@
+.logo {
+    float: left;
+    margin-left: 25px;
+}
+.logo span img {
+    width: 260px;
+    height: auto;
+}
+.errorMsg {
+    font-weight: bold;
+    color: #FF5050;
+}
+/*
+Z-Indexes
+*/
+
+.suggestions {
+    z-index: 100;
+}
+.input-container {
+    position: relative;
+}
+.input-container input {
+    box-shadow: none;
+}
+.tags-container {
+    margin-bottom: 1px;
+}
+.tag-text {
+    color: #ffffff;
+    padding: 4px;
+    padding-left: 8px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: #00B2EF;
+    display: inline-block;
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+    transform: translateX(-10px);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.tag-text.load-in {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+}
+.tag-close {
+    color: #ffffff;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    margin-right: 5px;
+}
+.tag-close:hover, .tag-close:visited {
+    color: #ffffff;
+    font-style: underline;
+}
+.tt-dropdown-menu li {
+    list-style: none;
+    padding: 3px 5px;
+}
+.tt-dropdown-menu .concept-name,
+.tt-dropdown-menu .more-info,
+.tt-dropdown-menu .noresult {
+    margin: 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.tt-dropdown-menu .concept-name, .tt-dropdown-menu .concept-type {
+    display: block;
+    vertical-align: middle;
+}
+.tt-dropdown-menu .concept-name {
+    float: left;
+    max-width: 290px;
+    font-size: 14px;
+}
+.tt-dropdown-menu .concept-type {
+    float: right;
+    font-size: 13px;
+}
+.tt-dropdown-menu .type-concept {
+    color: #00b2ef;
+}
+.tt-dropdown-menu .type-document {
+    color: #FF7832;
+}
+.tt-dropdown-menu .more-info {
+    width: 100%;
+    padding-left: 10px;
+    font-style: italic;
+    font-size: 13px;
+}
+.tt-dropdown-menu .noresult {
+    background-color: #FF5050;
+    padding: 5px 10px;
+    border: none;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+.tt-dropdown-menu .noresult h4 {
+    font-size: 13px;
+    color: white;
+}
+/* specific styles for the dropdown list when you type concepts */
+
+.result-description {
+    text-align: left;
+    margin-bottom: 1.4rem;
+}
+
+.wikipedia-article {
+    margin-bottom: 5px;
+}
+.article-link {
+    display: inline-block;
+    width: 80%;
+    padding: 10px;
+    background-color: #FAFAFA;
+    border: 1px solid #F1F1F2;
+}
+.relevance {
+    margin-left: 15px;
+    font-weight: 200;
+    font-size: 27px;
+    color: #00B2EF;
+}
+.employee-card {
+    padding: 5px;
+    background-color: #FFF;
+    border: 1px solid #F1F1F2;
+    margin-bottom: 20px;
+    -o-transition: .25s;
+    -ms-transition: .25s;
+    -moz-transition: .25s;
+    -webkit-transition: .25s;
+    transition: .25s;
+    position: relative;
+}
+.overflow-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.expert-image {
+    text-decoration: none;
+    padding: 0px;
+}
+.expert-image .img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: #eee;
+}
+.answer-text {
+  margin-bottom: 10px;
+}
+.expert-info {
+    padding-top: 5px;
+    z-index: 10;
+}
+.expert-name {
+    color: #222;
+    margin: 0px;
+    text-decoration: none;
+}
+.expert-score {
+    color: #00b2ef;
+    text-decoration: none;
+}
+.expertise {
+    padding-left: 0px;
+    list-style-type: none;
+    color: #737373;
+}
+.expertise-tag {
+    color: #737373;
+    list-style-type: none;
+}
+hr {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-top: 1px solid #a6a8ab;
+}
+.expertise li {
+    margin-bottom: 3px;
+    text-indent: -0.75em;
+    padding-left: 0.75em;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.twitter-typeahead {
+    width: 100%;
+}
+.tt-dropdown-menu {
+    border-radius: 3px;
+    border: 1px solid #C7C7C7;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 100%;
+}
+.typeahead {
+    background-color: #fff;
+}
+.tt-query {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.tt-hint {
+    color: #999;
+}
+.tt-suggestion {
+    padding: 3px 7px;
+    line-height: 1.5;
+}
+.tt-suggestion.tt-cursor {
+    color: #fff;
+    background-color: #0097cf;
+}
+.tt-suggestion p {
+    margin: 0;
+}
+
+#taWidgetContainer {
+  width: 100%;
+  height: 600px;
+  display: block;
+  padding: 0px;
+}
+
+.header .api-label {
+    color: #00b2ef;
+    display: inline;
+    font-weight: 400;
+}
+
+.modal {
+    width: 90%;
+    padding: 5px 10px;
+}
+
+.modal a.close-modal {
+    top: 0px;
+    right: 0px;
+}
